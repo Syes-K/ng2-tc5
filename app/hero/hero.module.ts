@@ -8,6 +8,7 @@ import {routing} from './hero.routing';
 
 import {HeroComponent} from './hero.component';
 import {HeroListComponent} from './heroList.component';
+import {HeroDetailComponent} from './heroDetail.component';
 import  {HeroService} from './hero.service';
 
 @NgModule({
@@ -17,7 +18,7 @@ import  {HeroService} from './hero.service';
         routing
     ],
     providers:[HeroService],
-    declarations:[HeroComponent,HeroListComponent],
-    bootstrap:[HeroComponent]
+    declarations:[HeroComponent,HeroListComponent,HeroDetailComponent]
+
 })
 export  class HeroModule{}

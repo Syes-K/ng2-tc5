@@ -7,7 +7,7 @@ import {HeroComponent} from './hero/hero.component';
 const  appRoutes:Routes =[
     {path:'',redirectTo: '/hero',
         pathMatch: 'full'},
-    {path:'hero',loadChildren:'app/hero/hero.module#HeroModule'},
+    // {path:'hero',loadChildren:'app/hero/hero.module#HeroModule'},
     {path:'custom',loadChildren:'app/custom/custom.module#CustomModule'}
 ];
 export const appRoutingProviders: any[] = [

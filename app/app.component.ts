@@ -2,7 +2,7 @@
  * Created by yongsheng.kuang on 16/8/24.
  */
 import {Component} from '@angular/core';
-
+import {Router,ActivatedRoute} from '@angular/router';
 @Component({
     selector: 'my-app',
     styles:[`
@@ -21,4 +21,10 @@ import {Component} from '@angular/core';
     `
 })
 export class AppComponent {
+    public path: string = '';
+    constructor(private router: Router,private activatedRoute: ActivatedRoute) {
+        router.events.subscribe((data) => {
+            this.path = data.url.substr(1);
+        });
+    }
 }
