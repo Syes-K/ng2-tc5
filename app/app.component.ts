@@ -6,10 +6,10 @@ import {Router,ActivatedRoute} from '@angular/router';
 @Component({
     selector: 'my-app',
     styles:[`
-        [routerlink].active{
-            border: 3px #9a2330 solid;
-            border-radius: 5px;
+        :host [routerlink].active{
+           color: #a45;
         }
+       
     `],
     template: `
         <h1>this is my App</h1>

@@ -7,7 +7,10 @@ import {Component} from '@angular/core';
     selector: 'my-custom',
     template: `
         <div>
-            <h3>this is custom</h3>
+            <hr>
+            <a routerLink="communication" routerLinkActive="active">communication</a>
+            <a routerLink="element" routerLinkActive="active">element</a>
+            <router-outlet></router-outlet>
         </div>
     `
 })
